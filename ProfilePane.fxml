@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER" spacing="10" padding="15" style="-fx-background-color: #f0f0f0;">
+
+    <!-- Title Label -->
+    <Label text="Player Profiles" style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+
+    <!-- Player Selection Section -->
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="Select Player:"/>
+        <ComboBox fx:id="playerSelector" promptText="Select a player..."/>
+    </HBox>
+
+    <!-- New Player Section -->
+    <HBox alignment="CENTER" spacing="10">
+        <Label text="New Player:"/>
+        <TextField fx:id="newPlayerField" promptText="Type new player name here"/>
+    </HBox>
+
+    <!-- Buttons Section -->
+    <HBox alignment="CENTER" spacing="20">
+        <Button fx:id="searchButton" text="Search For Player"/>
+        <Button fx:id="createProfileButton" text="Create New Profile"/>
+        <Button fx:id="showProfilesButton" text="Show Profiles"/>
+    </HBox>
+
+    <!-- Status Message -->
+    <Text fx:id="statusMessage" text="BrickBreaker Homescreen" fill="blue"/>
+
+</VBox>
+
